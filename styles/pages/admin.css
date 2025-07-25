@@ -1,0 +1,70 @@
+.dash-admin-bg::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* background-image: url('../../assets/images/tranquil-forest-landscape-autumn-leaves-beauty-abounds-generated-by-ai.jpg'); */
+    /* background-image: url('../../assets/images/rendu-3d-statue-bouddha-foret.jpg'); */
+    background-image: url('../../assets/images/massage-table-setting-with-white-candles-black-stones.jpg');
+    background-size: fixed;
+    opacity: .85;
+    z-index: -1;
+}
+
+.admin-page
+{
+    background-color: rgb(255, 255, 255);
+    color: whitesmoke;
+}
+
+.dash-title
+{
+    color: whitesmoke;
+}
+.admin-title
+{
+    text-align: center;
+    padding: 2rem;
+}
+
+.admin_dashboard
+{
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    height: 60%;
+}
+
+.admin-selection{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.75);
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding-bottom: 3rem;
+    border-left: none;
+}
+
+.admin-button01
+{
+    text-align: left;
+    background-color: grey;
+    font-family: var(--body-font);
+    color: whitesmoke;
+    border: 0;
+    height: 3rem;
+    padding-left: 2rem;
+}
+
+.admin-button02
+{
+    text-align: left;
+    background-color: rgb(74, 74, 74);
+    font-family: var(--body-font);
+    color: whitesmoke;
+    border: 0;
+    height: 3rem;
+    padding-left: 2rem;
+}

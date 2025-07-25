@@ -1,0 +1,193 @@
+.dash-client-bg::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url('../../assets/images/rendu-3d-statue-bouddha-foret.jpg');
+    background-size: fixed;
+    opacity: .5;
+    z-index: -1;
+}
+
+
+.dashboard-h1
+{
+    color: whitesmoke;
+}
+.dash-title
+{
+    text-align: center;
+    padding: 2rem;
+}
+
+.dashboard-grid
+{
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    height: 60%;
+    gap: 2rem;
+    padding: 2rem 0 ;
+}
+
+.dashboard-selection{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.75);
+    border-right: 2px gray solid;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    height: 260px;
+}
+
+.dashboard-button
+{
+
+    background-color: grey;
+    box-shadow: 0 1px 2px black;
+    font-family: var(--body-font);
+    color: black;
+    border: 0;
+    height: 3rem;
+    padding-left: 2rem;
+    margin: .1rem 0;
+}
+.dashboard-button:hover
+{
+    background-color: darkgrey;
+}
+
+.dashboard-button:active
+{
+    background-color: rgb(80, 80, 80);
+}
+
+.dashboard-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.75);
+    border: 2px solid var(--green-cal-poly) ;
+    border-radius: 32px;
+    padding: 2rem 1rem;
+
+}
+
+.dashboard-message
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: auto ;
+}
+
+.dashboard-avis-com-id
+{
+    display: inline;
+    color: black;
+}
+
+.dashboard-avis-com-content
+{
+    padding: 1rem;
+    border: 2px solid var(--green-cal-poly);
+    border-radius: 2rem;
+    background-color: grey;
+    height: auto;
+    font-size: medium;
+    margin: .5rem 0;
+}
+
+.dashboard-preference
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.75);
+    border-left: 2px gray solid;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    height: 350px;
+}
+
+
+.dashboard-pref-container
+{
+    padding: 1rem;
+    margin: auto;
+}
+
+.dash-global-info
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.dash-client-items
+{
+    padding: 2rem;
+    border-radius: 2rem;
+    height: auto;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+}
+
+.dash-client-items ul
+{
+    list-style-type: none;
+}
+
+.dash-client-items img
+{
+    height: 10rem;
+    width: auto;
+}
+
+.progress
+{
+    border-radius: 2rem !important;
+    margin: 1rem 0 2rem 0;
+}
+
+.progress-bar
+{
+    background-color: var(--green-cal-poly) !important;
+}
+
+.dash-seance-full-c-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 2rem 0 1rem;
+}
+
+.dash-seance-full-c
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.shopping-cart-block
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block-bottom
+{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,60 @@
+.container-booking
+{
+    background: rgba(0, 0, 0, 0.5);
+    width: 70%;
+    padding: 2rem;
+    margin: 4rem auto;
+    border: 2px solid var(--green-cal-poly);
+    border-radius: 2rem;
+}
+
+.center
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.row
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 12rem);
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 20px;
+    
+}
+.row-bookform
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 8rem);
+    justify-content: center;
+    align-items: center;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 20px;
+    width: 100%;
+
+}
+.row-bookform .form-group
+{
+    width: 100%;
+}
+
+.col-md-2
+{
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.col-md-12
+{
+    width: 100%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+

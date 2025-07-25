@@ -1,0 +1,186 @@
+button
+{
+    padding:  1rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--green-cal-poly-opacity);
+    font-family: var(--body-font);
+    color: white;
+    box-shadow: 1px 2px 3px black;
+    text-decoration: none;
+    width: auto;
+    transition: 0.5s;
+}
+.button 
+{
+    border: none;
+    border-radius: 2rem;
+    height: 2rem;
+    margin: 1rem;
+    padding:  1rem 2rem;
+    box-shadow: 1px 2px 3px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    background-color: var(--green-cal-poly-opacity);
+}
+
+
+.editbutton,
+.submit-btn
+{
+    padding:  .5rem 2rem;
+    margin: 1rem;
+
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--green-cal-poly-opacity);
+    font-family: var(--body-font);
+    color: white;
+    box-shadow: 1px 2px 3px black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.submit_TS
+{
+    float: right;
+}
+
+.btn-danger
+{
+    background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: none;
+    margin: 0;
+}
+
+.btn-success {
+    color: whitesmoke;
+    background-color: var(--green-cal-poly);
+    margin: 0;  
+}
+
+.button-book
+{
+    width: 100%;
+}
+.btn-success:hover {
+    color: var(--green-cal-poly-hover);
+    background-color: var(--green-cal-poly);
+}
+.btn-danger:hover {
+    color: black;
+    transition: none;
+}
+
+.btn-xs
+{
+    padding: 1rem 1rem;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.button-center
+{
+    margin: auto;
+}
+
+.btn-transparent
+{
+    background-color: var(--green-cal-poly-opacity);
+}
+.btn-opaque
+{
+    background-color: var(--green-cal-poly);
+}
+
+.button-serv
+{
+    width: 18.75rem;
+    height: 18.75rem;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    margin: 1rem 0;
+    position: relative;
+}
+
+.button-serv img
+{
+    width: 18.5rem;
+    border-radius: 2rem;
+    
+}
+
+.button-serv-text{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .6s;
+    color: whitesmoke;
+}
+
+.button:hover,
+.editbutton:hover,
+.button-large:hover
+{
+    background-color: var(--green-cal-poly-hover);
+    transform: scale(1.1);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.button-serv:hover
+{
+    transform: scale(1.1);
+}
+.button-serv-text:hover
+{
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+}
+.button-serv button:hover,
+.button-serv img:hover
+{
+    opacity: .25;
+}
+
+.btn-basket
+{
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 1rem;
+    background: none;
+    box-shadow: none;
+}
+
+.btn-basket:hover
+{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.material-symbols-outlined
+{
+    color: rgb(40,40,40);
+}
+.material-symbols-outlined:hover
+{
+    cursor: pointer;
+    color: red;
+}

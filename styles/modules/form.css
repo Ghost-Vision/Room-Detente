@@ -1,0 +1,174 @@
+.form-case
+{
+    background: rgba(0, 0, 0, .5);
+    border: 2px solid var(--green-cal-poly);
+    border-radius: 2rem;
+    margin: 2rem;
+    padding: 2rem;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-title{
+    margin: 2rem 0 1rem 0;
+}
+.form-text{
+    text-align: center;
+    margin: 1rem;
+}
+
+.form-item
+{
+    display: grid;
+    grid-template-columns: 160px 168px;
+    margin: 0 1rem ;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-c-item
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form-c-item label
+{
+    color: whitesmoke;
+}
+
+.form-item input,
+.form-c-item input
+{
+    display: flex;
+    border-radius: .75rem;
+    padding: .5rem;
+    margin: .25rem;
+    font-family: var(--body-font);
+    align-items: end;
+    align-content: end;
+    height: 2.5rem;
+    background-color: #d9d9d957;
+    border: 1px var(--green-cal-poly) solid;
+}
+
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 2rem;
+    border: 2px var(--green-cal-poly) solid;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.form-nom{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: auto;
+}
+.form-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-message-item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: whitesmoke;
+}
+
+.form-input,
+.form-message-item input{
+    
+    display: flex;
+    flex-direction: column;
+    height: 2rem;
+    margin: 1rem 0rem;
+    padding-left: .5rem;
+    width: 100%;
+
+    border: 1px var(--green-cal-poly) solid;
+    border-radius: 2rem;
+}
+
+.form-message label
+{
+    padding-left: .5rem;
+    padding-bottom: .25rem;
+    color: whitesmoke;
+}
+
+.form-c-item textarea{
+    border: 1px var(--green-cal-poly) solid;
+    border-radius: .75rem;
+    padding: 1rem;
+    background-color: #d9d9d957;
+    font-family: var(--body-font);
+    resize: none;
+
+    justify-content: start;
+}
+
+.form-column{
+    display: flex;
+    flex-direction: column;
+    width: 100;
+}
+
+
+.input-field
+{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(133, 133, 133);
+    height: 2rem;
+    width: 100%;
+    margin-top: 1rem;
+    padding-left: 2rem;
+}
+
+.add-product,
+.update-product
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50vw;
+    height: 100%;
+    padding: 2rem;
+    margin-top: 2rem;
+    border: 2px solid var(--green-cal-poly);
+    border-radius: 2rem;
+}
+
+.update-product img
+{
+    height: 10rem;
+    width: auto ;
+}
+
+.edit-form img
+{
+    height: 15rem;
+    width: 15rem;
+    object-fit: cover;
+    border: 3px solid var(--green-cal-poly);
+    border-radius: 2rem;
+}
+

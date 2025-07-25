@@ -1,0 +1,524 @@
+/* Pages */
+@import 'pages/about.css';
+@import 'pages/admin.css';
+@import 'pages/contact.css';
+@import 'pages/dashboard.css';
+@import 'pages/homes.css';
+@import 'pages/login.css';
+@import 'pages/services.css';
+@import 'pages/signup.css';
+@import 'pages/booking.css';
+
+/* Modules */
+@import 'modules/appBar.css';
+@import 'modules/blackBanner.css';
+@import 'modules/button.css';
+@import 'modules/footer.css';
+@import 'modules/form.css';
+@import 'modules/modal.css';
+@import 'modules/table.css';
+
+@font-face 
+{
+    font-family: 'TAN-PEARL';
+    src: url(../assets/font/TanPearl/TAN-PEARL-Regular.ttf);
+}
+@font-face {
+    font-family: 'Neogrey';
+    src: url(../assets/font/neogrey/Neogrey\ Regular.ttf)
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url(../assets/font/Dosis/static/Dosis-Regular.ttf);
+}
+
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+/*Design System*/
+:root{
+    /*Colors*/
+    --beige-ecru : #DDBB87;
+    --beige-papaya : #FFE9C8;
+    --white-smoke : #F3F3F3;
+    --green-cal-poly : #38482B;
+    --green-cal-poly-opacity : #38482b7e;
+    --green-cal-poly-hover :#13180e;
+    --black : #000000;
+
+    /*Text Configuration*/
+    --body-font :'Dosis';
+    --body-highlight-font : 'Dosis';
+    --big-title-font : 'TAN-PEARL';
+    --title-font : 'TAN-PEARL';
+    --title2-font : 'Dosis';
+    --header-font : 'TAN-PEARL';
+
+    --body-font-weight : 400;
+    --body-highlight-font-weight :600;
+    --big-title-font-weight:500;
+    --title-font-weight:400;
+    --title2-font-weight:400;
+    --header-font-weight:400;
+
+    --body-font-size :20px;
+    --body-highlight-font-size :20px;
+    --big-title-font-size: 32px;
+    --title-font-size:  28px;
+    --title2-font-size:  28px;
+    --header-font-size: 48px;
+
+    --body-line-height :auto;
+    --body-highlight-line-height:2rem;
+    --title-line-height:2rem;
+    --big-title-line-height:2rem;
+    --title2-line-height:2.25rem;
+    --header-line-height:4rem;
+}
+
+body{
+    font-family: var(--body-font) !important;
+    font-style: normal !important;
+    font-weight: var(--body-font-weight) !important;
+    font-size: var(--body-font-size) !important;
+    line-height: var(--body-line-height) !important;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main
+{
+    position: relative;
+    flex-grow: 1;
+}
+
+main::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url('../assets/images/minimalistic-zen-stone-background2.jpg');
+    background-size: cover;
+    opacity: .2;
+    z-index: -1;
+}
+
+
+
+.title-black,
+.text-black
+{
+    color: black;
+}
+
+.text-white
+{
+    color: whitesmoke;
+}
+
+h1{
+    font-family: var(--header-font);
+    font-size: var(--header-font-size);
+    font-weight: var(--header-font-weight);
+    line-height: var(--header-line-height);
+    color: black ;
+}
+h2{
+    font-family:var(--big-title-font);
+    font-size: var(--big-title-font-size);
+    font-weight: var(--big-title-font-weight);
+    line-height: var(--big-title-line-height);
+    color: black ;
+}
+h3{
+    font-family:var(--title-font) ;
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
+    line-height: var(--title-line-height);
+}
+h4{
+    font-family:var(--title2-font);
+    font-size: var(--title2-font-size);
+    font-weight: var(--title2-font-weight);
+    line-height: var(--title2-line-height);
+    text-transform: uppercase;
+}
+
+strong{
+    font-family: var(--body-highlight-font) !important;;
+    font-size: var(--body-highlight-font-size) !important;;
+    font-weight: var(--body-highlight-font-weight) !important;;
+    line-height: var(--body-highlight-line-height) !important;
+}
+
+sup
+{
+    font-size: 12px;
+}
+
+a
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+.background-black
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2rem;
+}
+.background-light
+{
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 2rem;
+}
+
+.border-green
+{
+    border: 2px solid var(--green-cal-poly);
+}
+
+.border-outset
+{
+    border-style: outset;
+}
+
+.no-border
+{
+    border: none;
+}
+.text-center
+{
+    text-align: center;
+}
+.flex-center
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-center-row
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------- Margin Setup ---------- */
+.no-margin
+{
+    margin: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* --- Margin Global ---*/
+.mg-1
+{
+    margin: 1rem;
+}
+.mg-2
+{
+    margin: 2rem;
+}
+.mg-4
+{
+    margin: 4rem;
+}
+
+/* --- Margin Vertical ---*/
+.mgv-1
+{
+    margin: 1rem 0;
+}
+.mgv-2
+{
+    margin: 2rem 0;
+}
+.mgv-4
+{
+    margin: 4rem 0;
+}
+/* --- Margin Horizontal ---*/
+.mgh-1
+{
+    margin: 0 1rem;
+}
+.mgh-2
+{
+    margin: 0 2rem;
+}
+.mgh-4
+{
+    margin: 0 4rem;
+}
+
+/* ---------- Padding Setup ---------- */
+.no-padding
+{
+    padding: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* --- Padding Global ---*/
+.pd-1
+{
+    padding: 1rem;
+}
+.pd-2
+{
+    padding: 2rem;
+}
+.pd-4
+{
+    padding: 4rem;
+}
+
+/* --- Padding Vertical ---*/
+.pdv-1
+{
+    padding: 1rem 0;
+}
+.pdv-2
+{
+    padding: 2rem 0;
+}
+.pdv-4
+{
+    padding: 4rem 0;
+}
+
+/* --- Padding Horizontal ---*/
+.pdh-1
+{
+    padding: 0 1rem;
+}
+.pdh-2
+{
+    padding: 0 2rem;
+}
+.pdh-4
+{
+    padding: 0 4rem;
+}
+
+/* --- Padding Top ---*/
+.pdT-1
+{
+    padding-top: 1rem;
+}
+.pdT-2
+{
+    padding-top: 2rem;
+}
+.pdT-4
+{
+    padding-top: 4rem;
+}
+
+/* --- Padding Bottom ---*/
+.pdB-1
+{
+    padding-bottom: 1rem;
+}
+.pdB-2
+{
+    padding-bottom: 2rem;
+}
+.pdB-4
+{
+    padding-bottom: 4rem;
+}
+/* ---------- End Padding Setup ---------- */
+
+
+.heading
+{
+    text-align: center;
+    padding: 4rem 1rem;
+    text-shadow: 1px 1px 1rem black;
+}
+.title-shadow
+{
+    text-shadow: 1px 1px 1rem black;
+}
+
+.products-container 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 25rem);
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.display-message
+{
+    display: flex;
+    background-color: #3b2a00;
+    color: whitesmoke;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.empty-text {
+    background-color: var(--green-cal-poly-opacity);
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.quantity-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.update-quantity {
+    color: var(--white);
+    padding: 0.5rem;
+    background-color: var(--color1);
+    margin: 1rem 0;
+}
+
+.price
+{
+    justify-content: space-between;
+}
+
+/* shop_service.php file styles */
+.products-container 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 25rem);
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.products-container .edit-form
+{
+display: flex;
+flex-direction: column;
+
+align-items: center;    
+text-align: center;
+padding: 2rem;
+box-shadow: var(--black);
+border: var(--border);
+border-radius: 0.5rem;
+
+box-shadow: 0 0 .5rem var(--green-cal-poly-opacity);
+}
+
+/* .products-container .edit-form img
+{
+width: auto;
+height: 10rem;
+margin: 0 auto;
+} */
+
+.products .edit-form h3
+{
+margin: 1rem 0;
+font-size: 2rem;
+color: var(--black);
+text-transform: uppercase;  
+}
+
+.products .edit-form .price
+{
+font-size: 1.5rem;
+color: var(--color1);
+margin: 1rem 0;  
+}
+.price
+{
+    display: flex;
+    width: 15rem;
+    justify-content: space-between;
+}
+
+
+
+/*---------- Media Queries ----------*/
+
+@media only screen and (max-width: 1345px) 
+{   
+
+    
+    .dashboard-preference
+    {
+        height: 500px;
+    }
+}
+
+/* ---- Mobile ---- */
+@media only screen and (max-width: 900px) 
+{
+    :root 
+    {
+        /* Mobile Variables */
+        --body-font-size: 12px;
+        --body-highlight-font-size: 1rem;
+        --header-font-size: 2.5rem;
+        --title-font-size: 1.25rem;
+        --big-title-font-size: 14px
+        
+        --body-line-height: 1.25rem;
+        --body-highlight-line-height: 1.25rem;
+        --header-line-height: 3rem;
+        --title-line-height: 1.5rem;
+    }
+
+    .heading
+    {
+        padding: 1rem 1rem;
+        padding-bottom: 0;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+    .hero h1
+    {
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 1.688rem;
+    }
+    .a-propos h2
+    {
+        font-size: 1.5rem;
+    }
+    h3,
+    .hero h3{
+        font-size: 1.438rem;
+    }
+    h4{
+        font-size: 1.25rem;
+    }
+    h5{
+        font-size: 1.125rem;
+    }
+    h6{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,52 @@
+.main-login{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.main-login::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-image: url("../../assets/images/zen-stones-balanced-beach-with-copy-space-sunrise-light-meditation-relaxation-ai-generative.jpg");
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.main-login h2{
+    padding: 1rem;
+}
+
+.main-login img{
+    width: 3rem;
+    margin: 1rem;
+}
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect-with{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+.no-compte{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: smaller; 
+    gap: 1rem;
+}

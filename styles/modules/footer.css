@@ -1,0 +1,147 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    color: whitesmoke;
+    background-color: #77674F;
+    width: 100%;
+    margin-top: auto;
+  }
+
+footer h2{
+color: whitesmoke;
+padding-top: .5rem;
+font-size: 20px;
+}
+.info-contact
+{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-top: 4px var(--green-cal-poly) solid;
+}
+
+.ic-zone
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.ic-zone img
+{
+    padding-right: 1rem;
+    height: 3rem;
+    width: auto;
+}
+
+.ic-text
+{    
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.reseaux-sociaux{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-top: 2px var(--green-cal-poly) solid;
+    padding: 1rem;
+
+}
+
+.rs-container
+{
+    display: flex;
+}
+
+.rs-cell
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.rs-items
+{
+    padding-left: 14rem;
+    padding-right: 14rem;
+}
+
+.rs-cell img{
+    width: 3rem;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--green-cal-poly);
+    padding: 1rem 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+.copyright-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--green-cal-poly);
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.copyright-text
+{
+    width: 100%;
+    text-align: center;
+    background-color: var(--green-cal-poly);
+}
+
+.copyright-logo
+{
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+}
+
+@media only screen and (max-width: 600px) 
+{
+    .info-contact
+    {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .ic-zone
+    {
+        padding-inline: .35rem;
+    }
+    .ic-zone img
+    {
+        width: auto;
+        height: 2rem;
+        padding-right: .25rem;
+    }
+    .copyright-text p
+    {
+        font-size: .75rem;
+    }
+}

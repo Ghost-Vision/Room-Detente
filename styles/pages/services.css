@@ -1,0 +1,215 @@
+/* ----- Section des services -----*/
+.main__services_page{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%;    */
+    color: black;
+
+    position: center;
+}
+
+.main__services_page::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url('../../assets/images/Background2.png');
+    background-size: cover;
+    opacity: .75;
+    z-index: -1;
+}
+
+.services__grid{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4rem;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem 4rem;
+}
+
+.services__grid__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+
+/* ----- Section Nos Formules -----*/
+.nos-formules{
+    border-bottom: 2px var(--green-cal-poly) solid;
+}
+
+.nf__main_title
+{
+    padding: 4rem 0;
+}
+
+.nf__main{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12rem;
+
+}
+.nf__main_item
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.nf__main_item:hover
+{
+    transform: scale(1.1);
+}
+
+.nf__cell
+{
+    height: 300px   ;
+}
+
+.nf__main
+.nf__cell{
+    position: relative;
+    width: 17rem;
+    height: 14.5rem;
+    /* margin: 8px 20px 70px; */
+}
+
+.nf__main
+.nf__cell
+.nf__cell_shape
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     background: black; 
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); /*Hexagone*/
+    box-shadow: .25rem 2rem 2rem black;
+
+}
+
+.nf__main
+.nf__cell
+.nf__cell_shape
+.nf__cell_content
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    color: whitesmoke;
+    background: linear-gradient(var(--green-cal-poly),transparent);
+    gap: 1rem;
+}
+
+.nf__main_item button
+{
+    transition: 0.5s;
+}
+.nf__main_item button:hover
+{
+    transform: scale(1.2);
+}
+
+/*----- Section Bonus -----*/
+.bonus{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 4rem;
+}
+
+.b__container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.b__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.b__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 65%;
+    padding: 2rem;
+}
+
+.b__content img{
+    width: 6rem;
+    margin: 1rem;
+}
+
+@media only screen and (max-width: 900px) 
+{
+    .nf__main
+    {
+        gap: 1rem;
+        padding-block: 1rem;
+    }
+    .nf__main .nf__cell
+    {
+        width: 10rem;
+        height: 9rem;
+    }
+    
+}
+
+@media only screen and (max-width: 600px)
+{
+    .services__grid
+    {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem 1rem;
+    }
+    .button-serv
+    {
+        height: 9rem !important;
+        width: 9rem !important;
+    }
+    .button-serv img
+    {
+        width: 9rem !important;
+    }
+    .services__grid__item h4
+    {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}

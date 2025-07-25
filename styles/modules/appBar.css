@@ -1,0 +1,194 @@
+.appBar{
+    display: grid;
+    grid-template-columns:1fr 3fr 1fr;
+    background-color: white;
+    padding : 0.5rem;
+    color: black;
+}
+
+.appBar-dashboard
+{
+    display: grid;
+    grid-template-columns:1fr 3fr 1fr;
+    background-color: #2c2c2cc8;
+    padding : 0.5rem;
+    color: whitesmoke;
+    margin-top: auto;
+    width: 100%;
+}
+
+.appBar__icon{
+    height: 4rem;
+    width: auto;
+    margin-inline : 2rem;
+}
+
+.appBar__login{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right : 2rem;
+    text-decoration: none;
+    color: black;
+}
+.appBar-dashboard__login{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right : 2rem;
+    text-decoration: none;
+    color: whitesmoke;
+    gap: 1rem;
+}
+.appBar__login img
+{
+    height: 3rem;
+    width: auto;
+}
+.appBar__login a
+{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+.appBar-dashboard__login img
+{
+    height: 3rem;
+    width: auto;
+    filter: invert(1);
+}
+.appBar__nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: 3rem;
+}
+
+.appBar__navItem
+{
+    font-family: 'Tan-Pearl';
+    margin-right: 1rem
+}
+
+.appBar__navItem:hover,
+.appBar__navItem.active{
+    text-decoration: underline var(--green-cal-poly);
+    text-underline-offset: 0.25rem;
+    text-decoration-thickness: 0.188rem;
+}
+
+.appBar__nav a{
+    text-decoration: none;
+    color: black;
+}
+.appBar__nav a:hover{
+    color: gray;
+}
+
+.appBar_left
+{
+    display: flex;
+    justify-content: end;
+}
+
+.appBar span
+{
+    color: rgb(0, 3, 204);
+}
+.appBar span:hover
+{
+    color: whitesmoke;
+}
+
+/* ---------- Menu Test ------------- */
+.mobile-menu
+{
+    display: none;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 2rem;
+    box-shadow: 1px 1px 25px black;
+    background: white;
+}
+
+
+.menu-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin-inline: auto;
+}
+
+.menu-listing
+{
+    list-style: none;
+}
+
+@media only screen and (min-width: 900px)
+{
+    .appBar
+    {
+        display:grid;
+    }
+} 
+@media only screen and (max-width: 900px) 
+{
+    /* -------------------------- AppBar ------------------------------- */
+    .appBar
+    {
+        display: none;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        touch-action: none;
+        overscroll-behavior: contain;
+
+    }
+    .appBar__nav
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .appBar_left
+    {
+        padding-top: 4rem;
+    }
+
+    .appBar img
+    {
+        width: 10rem;
+        height: auto;
+        padding-bottom: 4rem;
+    }
+
+    .menu-listing
+    {
+        flex-direction: column;
+    }
+    .menu-listing a
+    {
+        display: block;
+        font-size: 1.5em;
+    }
+
+    .appBar_small
+    {
+        display: block;
+    }
+    .mobile-menu
+    {
+        display: block;
+    }
+
+    /* --------------------------------------------------------- */
+}

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppin', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.hexa__container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.hexa__container 
+.hexagon{
+    position: relative;
+    width: 350px;
+    height: 400px;
+    margin: 50px 20px 70px;
+}
+
+/* ----- Ombre Sous l'hexagone-----*/
+.hexa__container 
+.hexagon::before{
+    content: "";
+    position: absolute;
+    bottom: -70px;
+    width: 100%;
+    height: 60px;
+    background: radial-gradient(rgba(0,0,0,0.5),transparent,transparent);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+/* ----- Gere le retrecissement de l'ombre en anim -----*/
+.hexa__container 
+.hexagon:hover::before
+{
+    opacity: 0.8px;
+    transform: scale(0.8);
+}
+/* ----- Création de l'Hexagone -----*/
+.hexa__container
+.hexagon
+.hexa__shape
+{
+    position : absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    clip-path: polygon(0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%); /*Hexagone*/
+    transition: 0.5s; 
+}
+/* Animation au passage de la souris*/
+.hexa__container
+.hexagon:hover
+.hexa__shape{
+    transform: translateY(-30px); 
+}
+
+/* Position & Dimension de l'image dans l'hexagone*/
+.hexa__container
+.hexagon
+.hexa__shape img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hexa__container
+.hexagon
+.hexa__shape a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.hexa__container
+.hexagon
+.hexa__shape
+.hexa__content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    color: whitesmoke;
+    background: linear-gradient(45deg, rgb(0, 183, 255),transparent);
+    /* transition Apparition texte*/
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.hexa__container
+.hexagon:hover
+.hexa__shape
+.hexa__content
+{
+    opacity: 1;
+}

@@ -1,0 +1,149 @@
+.a-propos
+{
+    padding: 4rem;
+}
+
+.a-propos-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.a-propos_main
+{
+    height: auto;
+    width: 60%;
+    padding: 2rem;
+}
+
+.a-propos-text
+{
+    
+    
+    margin: auto;
+    opacity: 1;
+}
+.a-propos h2,
+.a-propos_main h3
+{
+    padding-bottom: 2rem;
+}
+.a-propos-text p
+{
+    padding: .5rem 0;
+}
+
+.about-contact
+{
+    padding: 4rem;
+}
+
+.about-s1
+{
+    height: 94vh;
+    padding:  4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.about-s1::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url("../../assets/images/3d-rendering-buddha-statute-sunset.jpg");
+    background-size: cover;
+    color: white;
+    opacity: .75;
+    height: 94vh;
+    z-index:-1;
+}
+
+.about-s1 p
+{
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75) ;
+}
+
+
+
+
+
+@media only screen and (max-width:1867px) 
+{
+
+}
+
+@media only screen and (max-width:1280px) 
+{
+    .about-s1::before
+    {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+    .about-s1
+    {
+        position: relative;
+    }
+}
+
+@media only screen and (max-width:900px) 
+{
+    .a-propos
+    {
+        padding: 2rem;
+    }
+    .style-honeycomb
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .style-honeycomb img
+    {
+        width: 6rem !important;
+    }
+
+    .a-propos-container
+    {
+        gap: 2rem;
+    }
+
+    .about-s1
+    {
+        padding: 0;
+        padding-block: 1rem;
+    }
+
+
+}
+
+@media only screen and (max-width:400px)
+{
+    .about-s1
+    {
+        height: auto;
+    }
+    .a-propos_main
+    {
+        padding: 1rem;
+        width: 80%;
+        margin-block: 1rem;
+    }
+    .about-contact
+    {
+        padding: 1rem 0 2rem 0 
+    }
+
+    .about-s1 .heading
+    {
+        padding-bottom: 2rem;
+    }
+} 

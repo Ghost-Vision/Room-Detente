@@ -1,0 +1,15 @@
+.blackBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.blackBanner__title{
+    font-size: var(--body-highlight-font-size);
+    font-weight: var(--body-highlight-font-weight);
+    margin-right: 2rem;
+}
+
+    
